@@ -1,0 +1,12 @@
+body{
+    background-color: black;
+    color:white
+}
+
+.img{
+    position:fixed;
+    top:100px;
+    right:-100px;
+    transform: translate(-50%,-50%);
+
+}
