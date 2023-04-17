@@ -1,12 +1,12 @@
 body{
     background-color: black;
-    color:white
+    color:#20C20E;
+    font-family: "Lucida Console", "Courier New", monospace;
 }
 
 .img{
-    position:fixed;
+    position:fixed; /*hará que se mantenga en la misma posición en la ventana del navegador  */
     top:100px;
     right:-100px;
-    transform: translate(-50%,-50%);
-
+    transform: translate(-50%,-50%); /*se utiliza para ajustar la posición de la imagen, de modo que su esquina superior derecha esté en la posición correcta.*/
 }
