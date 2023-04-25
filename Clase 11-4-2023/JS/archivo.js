@@ -46,12 +46,15 @@ for(var elemento of basedatos){
 
 console.log(basedatos);
 basedatos.forEach(elemento => {
-    card = '<div class="card">
-            <img src="/Clase 11-4-2023/imagenes/tele.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-        <h5 class="card-title">Televisor</h5>
-        <p class="card-text">Televisor LED 43 Full HD Smart TV / T5202. $999.990</p>
-        <a href="#" class="btn btn-primary">Agregar al carrito</a>
-        </div>
-        </div>
+    card = <div class="card">
+    <img src="/Clase 11-4-2023/imagenes/tele.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Televisor</h5>
+      <p class="card-text">Televisor LED 43 Full HD Smart TV / T5202. $999.990</p>
+      <a href="#" class="btn btn-primary">Agregar al carrito</a>
+    </div>
+  </div>
+    console.log(elemento.apellido)
 });
+
+productos.innerHTML= insertar
