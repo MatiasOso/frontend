@@ -1,15 +1,51 @@
-document.write('Ingrese el id del producto <input type="number" id="id"/>');
-document.write('Ingrese el nombre del producto <input type="text" id="nombre"/>');
-document.write('Ingrese la cantidad del producto <input type="number" id="cantidad"/>');
-document.write('Ingrese el precio unitario del producto $<input type="number" id="precio"/>');
-document.write('Ingrese la imagen del producto <input type="file" id="imagen"/>');
-id= document.getElementById('id').value;
-nombre = document.getElementById('nombre').value;
-cantidad = document.getElementById('cantidad').value;
-precio = document.getElementById('precio').value;
-imagen = document.getElementById('imagen').value; 
+class Product{
+    constructor(id,nombre,cantidad,precio,imagen){
+        this.id=id;
+        this.nombre=nombre;
+        this.cantidad=cantidad;
+        this.precio=precio;
+        this.imagen=imagen;
+    }
+}
 
-document.write('Ingresar prodducto <input type="button" id="imagen"/>');
+class UI {
+    addProduct(){
+
+    }
+    deleteProduct(){
+
+    }
+    showMessage(){
+
+    }
+}
+
+//DOM EVENTS
+document.getElementById('product-form').addEventListener('submit',function() {
+   const id = document.getElementById('id').value
+   const nombre = document.getElementById('nombre').value
+   const cantidad = document.getElementById('cantidad').value
+   const precio = document.getElementById('precio').value
+   const imagen = document.getElementById('imagen').value
+
+    console.log(id,nombre,cantidad,precio,imagen)
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

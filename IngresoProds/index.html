@@ -68,43 +68,44 @@
         </header>
 
     <main>
-        <div id="product-form">
-            <form>
-              <label for="product-id">ID:</label>
-              <input type="text" id="product-id" name="product-id" required><br>
-          
-              <label for="product-name">Name:</label>
-              <input type="text" id="product-name" name="product-name" required><br>
-          
-              <label for="product-price">Price:</label>
-              <input type="number" id="product-price" name="product-price" min="0" step="0.01" required><br>
-          
-              <label for="product-quantity">Quantity:</label>
-              <input type="number" id="product-quantity" name="product-quantity" min="0" required><br>
-          
-              <label for="product-image">Image:</label>
-              <input type="file" id="product-image" name="product-image" accept="image/*"><br>
-          
-              <button type="submit" onclick="addProduct()">Add Product</button>
-            </form>
-          </div>
-          
-          <script>
-            function addProduct() {
-              // Get the values from the form
-              const id = document.getElementById('product-id').value;
-              const name = document.getElementById('product-name').value;
-              const price = parseFloat(document.getElementById('product-price').value);
-              const quantity = parseInt(document.getElementById('product-quantity').value);
-              const image = document.getElementById('product-image').files[0];
-          
-              // Create a new product object with the values
-              const newProduct = { id, name, price, quantity, image };
-          
-              // Add the new product to the database or do something else with it
-              console.log(newProduct);
-            }
-          </script>
+        <nav class="navbar navbar-light bg-light">
+            <a href="/" class="navbar-brand">
+                Product APP
+            </a>
+        </nav>
+        <div class="container">
+            <div id="App" class="row pt-5">
+                <div clas="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Ingrese un producto</h4>
+                        </div>
+                        <form id="product-form" class="card-body">
+                            <div class="form-group">
+                                <input type="text" name="id" placeholder="ID del producto" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Nombre del producto" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="number" name="cantidad" placeholder="Cantidad del producto/Stock" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="number" name="precio" placeholder="Precio del producto" step="0.01" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="file" name="imagen" placeholder="Foto del producto" class="form-control" required>
+                            </div>
+                            <input type="submit" value="save" class="btn btn-primary btn-block text-center">
+                        </form>
+                    </div>
+                </div>
+                <div id="product-list" class=col-md-8">
+                
+                </div>
+            </div>
+        </div>
+        
           
 
 
@@ -125,7 +126,7 @@
     <p class="text-center text-body-secondary">© 2023 Company, Inc</p>
   </footer>
 
-
+<script src="formulario.js"></script>
 </body>
 
 </html>
