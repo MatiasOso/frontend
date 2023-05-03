@@ -67,40 +67,40 @@
         </div>
         </header>
 
-    <main>
+    <main class="text-bg-dark">
         <nav class="navbar navbar-light bg-light">
             <a href="/" class="navbar-brand">
-                Product APP
+                Products
             </a>
         </nav>
         <div class="container">
             <div id="App" class="row pt-5">
-                <div clas="col-md-4">
+                <div clas="col-md-3" id="ayuda">
                     <div class="card">
                         <div class="card-header">
                             <h4>Ingrese un producto</h4>
                         </div>
                         <form id="product-form" class="card-body">
-                            <div class="form-group">
-                                <input type="text" name="id" placeholder="ID del producto" class="form-control" required>
+                            <div class="form-group mt-2">
+                                <input type="text" id="id" placeholder="ID del producto" class="form-control" required>
                             </div>
-                            <div class="form-group">
-                                <input type="text" name="name" placeholder="Nombre del producto" class="form-control" required>
+                            <div class="form-group mt-2">
+                                <input type="text" id="name" placeholder="Nombre del producto" class="form-control" required>
                             </div>
-                            <div class="form-group">
-                                <input type="number" name="cantidad" placeholder="Cantidad del producto/Stock" class="form-control" required>
+                            <div class="form-group mt-2">
+                                <input type="number" id="cantidad" placeholder="Cantidad del producto/Stock" class="form-control" required>
                             </div>
-                            <div class="form-group">
-                                <input type="number" name="precio" placeholder="Precio del producto" step="0.01" class="form-control" required>
+                            <div class="form-group mt-2">
+                                <input type="number" id="precio" placeholder="Precio del producto" step="0.01" class="form-control" required>
                             </div>
-                            <div class="form-group">
-                                <input type="file" name="imagen" placeholder="Foto del producto" class="form-control" required>
+                            <div class="form-group mt-2">
+                                <input type="file" id="imagen" placeholder="Foto del producto" class="form-control" required>
                             </div>
                             <input type="submit" value="save" class="btn btn-primary btn-block text-center">
                         </form>
                     </div>
                 </div>
-                <div id="product-list" class=col-md-8">
+                <div id="product-list" class="col-md-8 mt-4">
                 
                 </div>
             </div>
