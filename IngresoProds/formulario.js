@@ -78,18 +78,6 @@ document.getElementById('product-list').addEventListener('click', function(e){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /*(id,nombreproducto,cantidad,precio,imagen) */
 
 

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         function nombreFuncion(elvalor=0, elvalor2=0){
+             console.log("El valor es " + elvalor);
+             console.log("El valor es " + elvalor2);
+         }
+        // EXPRESIONES LAMBDA
+        const mivariable = (elvalor=0, elvalor2=0) =>{
+            console.log("El valor es " + elvalor);
+            console.log("El valor es " + elvalor2);
+        }
+    </script>
+</head>
+<body onload="mivariable()">
+    <input onchange="nombreFuncion(this.value, 999)"/>
+    <button onclick="mivariable()">Hace click</button>
+    <!-- TAREA: ¡¡¡formulario para registrar usuarios en el ecommerce!!! -->
+</body>
+</html>
